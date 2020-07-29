@@ -1,0 +1,34 @@
+import random
+
+def generate():
+ a=random.randint(40,47)
+ b=random.randint(40,47)
+ c=random.randint(40,47)
+ d=random.choice([a,b,c]) 
+
+
+ if(d==a):
+     sol=22
+ elif(d==b):
+     sol=11
+ else:
+     sol=33
+
+
+ if(a==b or a==c or b==c):
+     generate()
+ else:
+  print(f"\033[0;37;{b}m 11")
+  print(f"\033[0;37;{a}m 22")
+  print(f"\033[0;37;{c}m 33")
+  print("\033[0;30;0m")
+
+  ans=int(input(f"which color will corresponds to {d} code"))
+
+  if ans==sol:
+      print("correct you won!!")
+  else:
+      print("oops!! incorrect")
+      print(f"correct answer was {sol} ")
+
+generate()
