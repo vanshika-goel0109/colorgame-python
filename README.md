@@ -7,3 +7,5 @@ Example:
 Green color has code 42.
 so 42 will be printed on screen with several colored strips including correct option too.
 And user to enter the number written on the correct strip as answer for code that it will generate.
+
+By the help of this game you will be able to learn the color codes easily and in a interesting manner.
